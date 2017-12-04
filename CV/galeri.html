@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="css/utama.css">
+    <link rel="stylesheet" href="css/akses_font.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="title"><i class="fa fa-user"></i> Curriculum Vitae</li>
+            <li class="right"><a href="#" onClick="getLocation(); return false;"><i class="fa fa-map-marker"></i> Get Lokasi</a></li>
+            <li class="right"><a class="active" href="galeri.html"><i class="fa fa-image"></i> Galeri</a></li>
+            <li class="right"><a href="portofolio.html"><i class="fa fa-file-code-o"></i> Portofolio</a></li>
+            <li class="right"><a href="index.html"><i class="fa fa-home"></i> Beranda</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="card">
+            <div class="row">
+                    <h3 class="border-green"><i class="fa fa-image"></i> Galeri</h3>
+                    <div class="kol-12">
+                            <div class="gallery">
+                                    <div class="gallery-item">
+                                        <img src="img/galeri/black.jpg">
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="img/galeri/chibi.jpg">
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="img/galeri/arturia.jpg">
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="img/galeri/eye.jpg">
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="img/galeri/vegito2.jpg">
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="img/galeri/zurin.png">
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="img/galeri/altera.jpg">
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="img/galeri/max.png">
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="img/galeri/selene.jpg">
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="img/galeri/hijab.jpg">
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="img/galeri/cover.jpg">
+                                    </div>
+                                </div>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+            <p>
+                &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Rino Ridlo Julianto
+            </p>
+    </div>
+</body>
+</html>
+<script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else { 
+                alert("Browser tidak mendukung Geolokasi");
+            }
+        }
+        
+        function showPosition(position) {
+            alert("Latitude: " + position.coords.latitude + 
+            "\nLongitude: " + position.coords.longitude);
+        }
+</script>
